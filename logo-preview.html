@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Варианты логотипа - Центр здоровой семьи</title>
+    <style>
+      body {
+        margin: 0;
+        background: #fbfaf6;
+        color: #1f2926;
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+      }
+
+      main {
+        width: min(980px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 42px 0;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 38px;
+        font-weight: 600;
+      }
+
+      p {
+        margin: 0 0 28px;
+        color: #63706b;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      article {
+        padding: 18px;
+        border: 1px solid rgba(49, 90, 74, 0.16);
+        border-radius: 8px;
+        background: #fff;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+      }
+
+      h2 {
+        margin: 14px 0 4px;
+        font-size: 18px;
+      }
+
+      article p {
+        margin: 0;
+        font-size: 14px;
+      }
+
+      @media (max-width: 720px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Варианты логотипа</h1>
+      <p>Четыре направления для «Центра здоровой семьи»: от мягкого wellness до более медицинского и семейного образа.</p>
+      <div class="grid">
+        <article>
+          <img src="assets/logo-variant-1.svg" alt="Вариант 1" />
+          <h2>Вариант 1</h2>
+          <p>Самый универсальный: сердце, плюс, спокойная экспертность.</p>
+        </article>
+        <article>
+          <img src="assets/logo-variant-2.svg" alt="Вариант 2" />
+          <h2>Вариант 2</h2>
+          <p>Более легкий и натуральный: лист, семья, баланс.</p>
+        </article>
+        <article>
+          <img src="assets/logo-variant-3.svg" alt="Вариант 3" />
+          <h2>Вариант 3</h2>
+          <p>Более премиальный и медицинский: строгий знак, чистая форма.</p>
+        </article>
+        <article>
+          <img src="assets/logo-variant-4.svg" alt="Вариант 4" />
+          <h2>Вариант 4</h2>
+          <p>Самый семейный: дом, забота, здоровье.</p>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Центр здоровой семьи - здоровье изнутри, красота снаружи</title>
+    <meta
+      name="description"
+      content="Комплексный центр здоровья, долголетия и эстетического ухода: биоквантовая диагностика, нутрициология, косметология и персональная карта здоровья."
+    />
+    <style>
+      :root {
+        --milk: #fbfaf6;
+        --linen: #f1ece2;
+        --sage: #6e8768;
+        --moss: #315a4a;
+        --rose: #c97f74;
+        --clay: #a85e52;
+        --ink: #1f2926;
+        --muted: #63706b;
+        --line: rgba(49, 90, 74, 0.16);
+        --shadow: 0 22px 70px rgba(31, 41, 38, 0.12);
+        --radius: 8px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--milk);
+        color: var(--ink);
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        line-height: 1.55;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .page {
+        overflow: hidden;
+      }
+
+      .container {
+        width: min(1160px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .nav {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background: rgba(251, 250, 246, 0.9);
+        border-bottom: 1px solid var(--line);
+        backdrop-filter: blur(18px);
+      }
+
+      .nav__inner {
+        min-height: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+        color: var(--moss);
+      }
+
+      .brand__logo {
+        width: 170px;
+        height: auto;
+      }
+
+      .nav__links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .btn {
+        min-height: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        border: 1px solid transparent;
+        border-radius: var(--radius);
+        padding: 13px 20px;
+        font-weight: 700;
+        line-height: 1.15;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn--primary {
+        background: var(--moss);
+        color: #fff;
+        box-shadow: 0 14px 34px rgba(49, 90, 74, 0.24);
+      }
+
+      .btn--primary:hover {
+        background: #264b3d;
+      }
+
+      .btn--secondary {
+        background: #fff;
+        border-color: var(--line);
+        color: var(--moss);
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: var(--clay);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      .hero {
+        min-height: calc(100vh - 74px);
+        display: grid;
+        align-items: center;
+        padding: 52px 0 42px;
+        background:
+          linear-gradient(90deg, rgba(251, 250, 246, 0.98) 0%, rgba(251, 250, 246, 0.88) 45%, rgba(251, 250, 246, 0.18) 100%),
+          url("assets/photos/beauty-room.jpg") center right / cover;
+      }
+
+      .hero__content {
+        max-width: 660px;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 22px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(44px, 7vw, 84px);
+        line-height: 0.98;
+        font-weight: 600;
+        color: var(--ink);
+        letter-spacing: 0;
+      }
+
+      .hero__lead {
+        max-width: 600px;
+        margin-bottom: 28px;
+        color: #43504b;
+        font-size: 20px;
+      }
+
+      .hero__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 30px;
+      }
+
+      .hero__chips {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        max-width: 780px;
+      }
+
+      .chip {
+        min-height: 76px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--moss);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .chip svg,
+      .icon {
+        width: 22px;
+        height: 22px;
+        flex: 0 0 22px;
+        stroke: currentColor;
+      }
+
+      section {
+        padding: 88px 0;
+      }
+
+      .section-head {
+        max-width: 760px;
+        margin-bottom: 34px;
+      }
+
+      .section-head h2 {
+        margin-bottom: 16px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(34px, 5vw, 56px);
+        line-height: 1.04;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+
+      .section-head p,
+      .large-copy {
+        color: var(--muted);
+        font-size: 18px;
+      }
+
+      .concept {
+        background: #fff;
+      }
+
+      .concept__grid {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 44px;
+        align-items: center;
+      }
+
+      .concept__image {
+        position: relative;
+        min-height: 430px;
+        overflow: hidden;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+
+      .concept__image img {
+        width: 100%;
+        height: 100%;
+        min-height: 430px;
+        object-fit: cover;
+      }
+
+      .space {
+        background: var(--milk);
+      }
+
+      .space__grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 18px;
+        align-items: stretch;
+      }
+
+      .space__stack {
+        display: grid;
+        gap: 18px;
+      }
+
+      .photo-card {
+        position: relative;
+        min-height: 230px;
+        overflow: hidden;
+        border-radius: var(--radius);
+        background: #fff;
+        box-shadow: 0 18px 48px rgba(31, 41, 38, 0.1);
+      }
+
+      .photo-card--large {
+        min-height: 520px;
+      }
+
+      .photo-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(0.86) contrast(0.96) brightness(1.02);
+      }
+
+      .photo-card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(31, 41, 38, 0) 42%, rgba(31, 41, 38, 0.58) 100%);
+      }
+
+      .photo-card__label {
+        position: absolute;
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+        z-index: 1;
+        color: #fff;
+      }
+
+      .photo-card__label strong {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 20px;
+        line-height: 1.18;
+      }
+
+      .photo-card__label span {
+        display: block;
+        color: rgba(255, 255, 255, 0.84);
+        font-size: 14px;
+      }
+
+      .mini-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .mini-gallery img {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        filter: saturate(0.88) contrast(0.97) brightness(1.03);
+      }
+
+      .balance {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .balance__item {
+        min-height: 150px;
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--milk);
+      }
+
+      .balance__item strong {
+        display: block;
+        margin-bottom: 9px;
+        color: var(--moss);
+        font-size: 18px;
+      }
+
+      .services {
+        background: var(--linen);
+      }
+
+      .services--beauty {
+        background: var(--milk);
+      }
+
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .service-grid--beauty {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .service-card {
+        min-height: 258px;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.76);
+      }
+
+      .service-card h3 {
+        margin-bottom: 12px;
+        color: var(--moss);
+        font-size: 22px;
+        line-height: 1.2;
+      }
+
+      .service-card p {
+        color: var(--muted);
+      }
+
+      .service-card .result {
+        margin-top: auto;
+        padding-top: 16px;
+        color: var(--ink);
+        font-weight: 700;
+      }
+
+      .section-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .work {
+        background: #fff;
+      }
+
+      .steps {
+        counter-reset: step;
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .step {
+        min-height: 232px;
+        position: relative;
+        padding: 22px 18px 20px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--milk);
+      }
+
+      .step::before {
+        counter-increment: step;
+        content: "0" counter(step);
+        display: inline-grid;
+        place-items: center;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 18px;
+        border-radius: 50%;
+        background: var(--moss);
+        color: #fff;
+        font-weight: 800;
+        font-size: 13px;
+      }
+
+      .step h3 {
+        margin-bottom: 9px;
+        font-size: 19px;
+        line-height: 1.2;
+      }
+
+      .step p {
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      .advantages {
+        background: var(--moss);
+        color: #fff;
+      }
+
+      .advantages .eyebrow,
+      .advantages .section-head p {
+        color: rgba(255, 255, 255, 0.74);
+      }
+
+      .advantage-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .advantage {
+        min-height: 190px;
+        padding: 23px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .advantage h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+
+      .advantage p {
+        color: rgba(255, 255, 255, 0.74);
+      }
+
+      .contact {
+        background:
+          linear-gradient(90deg, rgba(251, 250, 246, 0.98), rgba(251, 250, 246, 0.88)),
+          url("assets/photos/beauty-equipment.jpg") center / cover;
+      }
+
+      .contact__grid {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 36px;
+        align-items: start;
+      }
+
+      .contact__info {
+        padding-top: 6px;
+      }
+
+      .contact-list {
+        display: grid;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .contact-list div {
+        padding: 16px 18px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.72);
+      }
+
+      .form {
+        display: grid;
+        gap: 14px;
+        padding: 28px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: #fff;
+        box-shadow: var(--shadow);
+      }
+
+      label {
+        display: grid;
+        gap: 7px;
+        color: var(--moss);
+        font-size: 14px;
+        font-weight: 800;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        min-height: 50px;
+        border: 1px solid rgba(49, 90, 74, 0.24);
+        border-radius: var(--radius);
+        padding: 13px 14px;
+        background: var(--milk);
+        color: var(--ink);
+        font: inherit;
+        outline: none;
+      }
+
+      textarea {
+        min-height: 104px;
+        resize: vertical;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        border-color: var(--moss);
+        box-shadow: 0 0 0 4px rgba(49, 90, 74, 0.1);
+      }
+
+      .form__note {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .footer {
+        padding: 28px 0;
+        background: var(--ink);
+        color: rgba(255, 255, 255, 0.72);
+      }
+
+      .footer__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 14px;
+      }
+
+      @media (max-width: 980px) {
+        .nav__links {
+          display: none;
+        }
+
+        .hero {
+          min-height: auto;
+          padding: 72px 0 54px;
+          background:
+            linear-gradient(180deg, rgba(251, 250, 246, 0.98) 0%, rgba(251, 250, 246, 0.9) 54%, rgba(251, 250, 246, 0.18) 100%),
+            url("assets/photos/beauty-room.jpg") center / cover;
+        }
+
+        .hero__chips,
+        .concept__grid,
+        .space__grid,
+        .contact__grid {
+          grid-template-columns: 1fr;
+        }
+
+        .service-grid,
+        .service-grid--beauty,
+        .advantage-grid,
+        .mini-gallery {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .steps {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 640px) {
+        .container {
+          width: min(100% - 28px, 1160px);
+        }
+
+        .nav__inner {
+          min-height: 66px;
+        }
+
+        .brand span:last-child {
+          max-width: 180px;
+          line-height: 1.15;
+        }
+
+        .nav .btn {
+          display: none;
+        }
+
+        h1 {
+          font-size: 42px;
+        }
+
+        .hero__lead {
+          font-size: 18px;
+        }
+
+        .hero__chips,
+        .balance,
+        .service-grid,
+        .service-grid--beauty,
+        .steps,
+        .advantage-grid,
+        .mini-gallery {
+          grid-template-columns: 1fr;
+        }
+
+        section {
+          padding: 62px 0;
+        }
+
+        .section-head h2 {
+          font-size: 36px;
+        }
+
+        .btn {
+          width: 100%;
+        }
+
+        .footer__inner {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="nav">
+        <div class="container nav__inner">
+          <a class="brand" href="#top" aria-label="Центр здоровой семьи">
+            <img class="brand__logo" src="assets/logo-variant-1.svg" alt="Центр здоровой семьи" />
+          </a>
+          <nav class="nav__links" aria-label="Основная навигация">
+            <a href="#concept">О центре</a>
+            <a href="#space">Фото</a>
+            <a href="#health">Здоровье</a>
+            <a href="#beauty">Красота</a>
+            <a href="#work">Как работаем</a>
+            <a href="#contacts">Контакты</a>
+          </nav>
+          <a class="btn btn--primary" href="#contacts">Записаться</a>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="container">
+            <div class="hero__content">
+              <p class="eyebrow">Здоровое долголетие и эстетический уход</p>
+              <h1 id="hero-title">Здоровье изнутри, красота снаружи</h1>
+              <p class="hero__lead">
+                Объединяем биоквантовую диагностику, нутрициологию и профессиональный эстетический уход, чтобы помочь вам восстановить баланс, энергию и естественную молодость.
+              </p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" href="#contacts">Записаться на первичную диагностику</a>
+                <a class="btn btn--secondary" href="#beauty">Подобрать программу ухода</a>
+              </div>
+              <div class="hero__chips" aria-label="Ключевые преимущества">
+                <div class="chip">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 3h6"/><path d="M10 3v6l-5 8a3 3 0 0 0 2.6 4.5h8.8A3 3 0 0 0 19 17l-5-8V3"/><path d="M8 14h8"/></svg>
+                  Биоквантовая диагностика организма
+                </div>
+                <div class="chip">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+                  Дипломированные специалисты
+                </div>
+                <div class="chip">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                  Индивидуальная карта здоровья и красоты
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="concept" id="concept" aria-labelledby="concept-title">
+          <div class="container concept__grid">
+            <div>
+              <p class="eyebrow">Концепция центра</p>
+              <div class="section-head">
+                <h2 id="concept-title">Красота и долголетие начинаются с внутреннего баланса</h2>
+                <p>
+                  В Центре здоровой семьи мы смотрим на здоровье и внешний вид как на единую систему. Усталость, снижение энергии, тусклая кожа и возрастные изменения часто связаны не только с внешними факторами, но и с дефицитами, стрессом и нарушением баланса организма.
+                </p>
+              </div>
+              <p class="large-copy">
+                Мы соединяем диагностику, нутрициологическую поддержку и профессиональный уход, чтобы помочь найти причину изменений и выстроить понятный путь к устойчивому результату.
+              </p>
+              <div class="balance">
+                <div class="balance__item">
+                  <strong>Внутренний баланс</strong>
+                  Диагностика, питание, нутрицевтическая поддержка и коррекция образа жизни.
+                </div>
+                <div class="balance__item">
+                  <strong>Внешний уход</strong>
+                  Диагностика кожи, аппаратные процедуры, anti-age и персональный домашний уход.
+                </div>
+              </div>
+            </div>
+            <div class="concept__image">
+              <img src="assets/photos/consultation-room.jpg" alt="Кабинет консультации Центра здоровой семьи" />
+            </div>
+          </div>
+        </section>
+
+        <section class="space" id="space" aria-labelledby="space-title">
+          <div class="container">
+            <div class="section-head">
+              <p class="eyebrow">Пространство центра</p>
+              <h2 id="space-title">Реальное место, где здоровье и уход собраны в одну систему</h2>
+            </div>
+            <div class="space__grid">
+              <article class="photo-card photo-card--large">
+                <img src="assets/photos/beauty-room.jpg" alt="Кабинет эстетического ухода" />
+                <div class="photo-card__label">
+                  <strong>Кабинет эстетического ухода</strong>
+                  <span>Аппаратные процедуры, диагностика кожи и комфортная атмосфера приема.</span>
+                </div>
+              </article>
+              <div class="space__stack">
+                <article class="photo-card">
+                  <img src="assets/photos/beauty-equipment.jpg" alt="Профессиональное оборудование и косметика" />
+                  <div class="photo-card__label">
+                    <strong>Профессиональный уход</strong>
+                    <span>Средства и аппараты для индивидуальных программ лица и тела.</span>
+                  </div>
+                </article>
+                <article class="photo-card">
+                  <img src="assets/photos/certificate.jpg" alt="Сертификат специалиста" />
+                  <div class="photo-card__label">
+                    <strong>Подтвержденная экспертность</strong>
+                    <span>Сертификаты и профильная подготовка специалистов центра.</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="mini-gallery" aria-label="Дополнительные фотографии центра">
+              <img src="assets/photos/home-beauty-shelves.jpg" alt="Зона Дом и Красота с уходовыми средствами" />
+              <img src="assets/photos/health-shelf.jpg" alt="Витрина направления здоровья" />
+              <img src="assets/photos/health-shelf-vertical.jpg" alt="Средства направления здоровья" />
+              <img src="assets/photos/consultation-room.jpg" alt="Кабинет консультации" />
+            </div>
+          </div>
+        </section>
+
+        <section class="services" id="health" aria-labelledby="health-title">
+          <div class="container">
+            <div class="section-head">
+              <p class="eyebrow">Направление 1</p>
+              <h2 id="health-title">Здоровье и долголетие: диагностика, питание и персональный план</h2>
+              <p>
+                Помогаем понять состояние организма, увидеть дефициты и подобрать индивидуальные решения для восстановления ресурса.
+              </p>
+            </div>
+            <div class="service-grid">
+              <article class="service-card">
+                <h3>Биоквантовая диагностика</h3>
+                <p>Экспресс-оценка состояния организма, которая помогает увидеть возможные дефициты, дисбалансы и зоны повышенной нагрузки.</p>
+                <p class="result">Польза: понятная отправная точка и понимание, с чего начать восстановление.</p>
+              </article>
+              <article class="service-card">
+                <h3>Консультации нутрициологов</h3>
+                <p>Индивидуальный разбор питания, образа жизни и потребностей организма с подбором рациона и нутрицевтической поддержки.</p>
+                <p class="result">Польза: питание становится рабочим инструментом для энергии и хорошего самочувствия.</p>
+              </article>
+              <article class="service-card">
+                <h3>Персональная карта здоровья</h3>
+                <p>Пошаговые рекомендации по питанию, режиму, поддержке организма и образу жизни на основе диагностики и консультации.</p>
+                <p class="result">Польза: ясный план действий без случайных добавок и универсальных схем.</p>
+              </article>
+            </div>
+            <div class="section-actions">
+              <a class="btn btn--primary" href="#contacts">Получить консультацию нутрициолога</a>
+              <a class="btn btn--secondary" href="#contacts">Пройти диагностику организма</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="services services--beauty" id="beauty" aria-labelledby="beauty-title">
+          <div class="container">
+            <div class="section-head">
+              <p class="eyebrow">Направление 2</p>
+              <h2 id="beauty-title">Красота и эстетика: профессиональный уход для естественной свежести</h2>
+              <p>
+                Подбираем процедуры и домашний уход с учетом состояния кожи, возраста, образа жизни и индивидуальных задач.
+              </p>
+            </div>
+            <div class="service-grid service-grid--beauty">
+              <article class="service-card">
+                <h3>Диагностика кожи лица</h3>
+                <p>Определение типа кожи, уровня увлажненности, чувствительности и проблемных зон.</p>
+                <p class="result">Результат: понятная стратегия ухода без случайного выбора косметики.</p>
+              </article>
+              <article class="service-card">
+                <h3>Ультразвуковая чистка лица</h3>
+                <p>Деликатное аппаратное очищение кожи от загрязнений и ороговевших клеток.</p>
+                <p class="result">Результат: более ровная, свежая и чистая кожа без длительного восстановления.</p>
+              </article>
+              <article class="service-card">
+                <h3>Anti-age терапия</h3>
+                <p>Комплексная работа с признаками увядания кожи и профилактикой возрастных изменений.</p>
+                <p class="result">Результат: поддержание тонуса, упругости и здорового сияния кожи.</p>
+              </article>
+              <article class="service-card">
+                <h3>Коррекция мимических морщин</h3>
+                <p>Программы, направленные на разглаживание микрорельефа и визуальное смягчение возрастных проявлений.</p>
+                <p class="result">Результат: более отдохнувший, ухоженный и естественный внешний вид.</p>
+              </article>
+              <article class="service-card">
+                <h3>Индивидуальный подбор ухода</h3>
+                <p>Подбор профессиональных средств для лица и тела под реальные задачи клиента.</p>
+                <p class="result">Результат: домашний уход работает эффективнее и поддерживает результат процедур.</p>
+              </article>
+              <article class="service-card">
+                <h3>Трихологический уход</h3>
+                <p>Работа с состоянием кожи головы и укреплением волос.</p>
+                <p class="result">Результат: улучшение качества волос и поддержка здоровья кожи головы.</p>
+              </article>
+            </div>
+            <div class="section-actions">
+              <a class="btn btn--primary" href="#contacts">Записаться на диагностику кожи</a>
+              <a class="btn btn--secondary" href="#contacts">Подобрать уход для лица и тела</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="work" id="work" aria-labelledby="work-title">
+          <div class="container">
+            <div class="section-head">
+              <p class="eyebrow">Как мы работаем</p>
+              <h2 id="work-title">Ваш путь к результату - по понятным шагам</h2>
+              <p>От первого запроса до персонального плана и сопровождения специалиста.</p>
+            </div>
+            <div class="steps">
+              <article class="step">
+                <h3>Первичная консультация</h3>
+                <p>Вы рассказываете о запросе: самочувствие, питание, кожа, волосы, возрастные изменения или комплексная цель.</p>
+              </article>
+              <article class="step">
+                <h3>Диагностика</h3>
+                <p>Проводим оценку состояния организма, кожи или кожи головы в зависимости от выбранного направления.</p>
+              </article>
+              <article class="step">
+                <h3>Индивидуальный план</h3>
+                <p>Формируем рекомендации по питанию, поддержке организма, процедурам, домашнему уходу и режиму.</p>
+              </article>
+              <article class="step">
+                <h3>Сопровождение</h3>
+                <p>Специалист помогает двигаться по плану, корректировать рекомендации и отслеживать динамику.</p>
+              </article>
+              <article class="step">
+                <h3>Результат</h3>
+                <p>Вы получаете системный путь к энергии, свежести и уверенности, а не разовую процедуру без продолжения.</p>
+              </article>
+            </div>
+            <div class="section-actions">
+              <a class="btn btn--primary" href="#contacts">Начать с консультации</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="advantages" id="advantages" aria-labelledby="advantages-title">
+          <div class="container">
+            <div class="section-head">
+              <p class="eyebrow">Преимущества</p>
+              <h2 id="advantages-title">Почему выбирают Центр здоровой семьи</h2>
+              <p>Спокойная экспертность, современные методы и персональный подход к каждому клиенту.</p>
+            </div>
+            <div class="advantage-grid">
+              <article class="advantage">
+                <h3>Дипломированные специалисты</h3>
+                <p>С вами работают эксперты, которые понимают связь между питанием, состоянием организма, кожей и образом жизни.</p>
+              </article>
+              <article class="advantage">
+                <h3>Комплексный подход</h3>
+                <p>Мы не разделяем здоровье и красоту: внешний результат становится устойчивее, когда организм получает поддержку изнутри.</p>
+              </article>
+              <article class="advantage">
+                <h3>Современные технологии</h3>
+                <p>Используем биоквантовую диагностику и аппаратные методы ухода для более точной оценки состояния.</p>
+              </article>
+              <article class="advantage">
+                <h3>Индивидуальные решения</h3>
+                <p>Не предлагаем шаблонные программы. Каждая рекомендация строится под ваш запрос, состояние и цели.</p>
+              </article>
+              <article class="advantage">
+                <h3>Забота о всей семье</h3>
+                <p>Помогаем сформировать привычки и решения, которые поддерживают здоровье не одного человека, а всей семьи.</p>
+              </article>
+              <article class="advantage">
+                <h3>Доверительная атмосфера</h3>
+                <p>Объясняем простыми словами, поддерживаем на каждом этапе и помогаем двигаться к результату без давления.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contacts" aria-labelledby="contact-title">
+          <div class="container contact__grid">
+            <div class="contact__info">
+              <p class="eyebrow">Запись и контакты</p>
+              <div class="section-head">
+                <h2 id="contact-title">Сделайте первый шаг к здоровью, энергии и естественной красоте</h2>
+                <p>
+                  Оставьте заявку, и мы свяжемся с вами, чтобы подобрать направление, специалиста и удобное время визита.
+                </p>
+              </div>
+              <div class="contact-list">
+                <div><strong>Адрес:</strong> укажите адрес центра</div>
+                <div><strong>Телефон / WhatsApp:</strong> +7 (000) 000-00-00</div>
+                <div><strong>Режим работы:</strong> ежедневно с 09:00 до 20:00</div>
+                <div><strong>Социальные сети:</strong> Instagram / Telegram</div>
+              </div>
+            </div>
+            <form class="form" id="lead-form">
+              <label>
+                Ваше имя
+                <input name="name" type="text" placeholder="Например, Анна" required />
+              </label>
+              <label>
+                Телефон / WhatsApp
+                <input name="phone" type="tel" placeholder="+7 (___) ___-__-__" required />
+              </label>
+              <label>
+                Интересующее направление
+                <select name="service" required>
+                  <option value="">Выберите направление</option>
+                  <option>Биоквантовая диагностика</option>
+                  <option>Нутрициология</option>
+                  <option>Косметология и уход</option>
+                  <option>Диагностика кожи</option>
+                  <option>Трихологический уход</option>
+                  <option>Комплексная программа</option>
+                </select>
+              </label>
+              <label>
+                Комментарий
+                <textarea name="message" placeholder="Коротко опишите ваш запрос"></textarea>
+              </label>
+              <button class="btn btn--primary" type="submit">Записаться на прием</button>
+              <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных. Форма готова к подключению к CRM, почте или мессенджеру.</p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <span>Центр здоровой семьи</span>
+          <span>Здоровье изнутри. Красота снаружи.</span>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const form = document.querySelector("#lead-form");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const button = form.querySelector("button");
+        button.textContent = "Заявка отправлена";
+        button.disabled = true;
+        setTimeout(() => {
+          button.textContent = "Записаться на прием";
+          button.disabled = false;
+          form.reset();
+        }, 2400);
+      });
+    </script>
+  </body>
+</html>

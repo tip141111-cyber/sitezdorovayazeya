@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 76" role="img" aria-labelledby="title desc">
+  <title id="title">Центр здоровой семьи - вариант 2</title>
+  <desc id="desc">Минималистичный логотип с листом, плюсом и семейным кругом</desc>
+  <rect width="260" height="76" rx="8" fill="#FFFFFF"/>
+  <g transform="translate(15 12)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 50C12 43 6 25 18 12c12-13 32-6 37 10 4 14-6 26-25 28Z" fill="#EEF2E8" stroke="#315A4A" stroke-width="2.4"/>
+    <path d="M22 31c7-14 19-18 30-18" stroke="#6E8768" stroke-width="2.8"/>
+    <circle cx="23" cy="24" r="5.2" fill="#C97F74" stroke="none"/>
+    <circle cx="39" cy="24" r="5.2" fill="#315A4A" stroke="none"/>
+    <path d="M31 31v13M24.5 37.5h13" stroke="#315A4A" stroke-width="3.1"/>
+  </g>
+  <text x="84" y="32" fill="#1F2926" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700">Центр здоровой семьи</text>
+  <text x="84" y="53" fill="#63706B" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600">здоровье изнутри - красота снаружи</text>
+</svg>

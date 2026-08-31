@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 76" role="img" aria-labelledby="title desc">
+  <title id="title">Центр здоровой семьи - вариант 4</title>
+  <desc id="desc">Легкий знак с домом, сердцем и плюсом для семейного центра</desc>
+  <rect width="260" height="76" rx="8" fill="#FBFAF6"/>
+  <g transform="translate(14 10)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 28 28 10l20 18v20a4 4 0 0 1-4 4H12a4 4 0 0 1-4-4V28Z" fill="#EEF2E8" stroke="#315A4A" stroke-width="2.6"/>
+    <path d="M28 23c5.2-5 12.8-1.7 12.8 4.4 0 7.1-7.5 11.4-12.8 15.7C22.7 38.8 15.2 34.5 15.2 27.4 15.2 21.3 22.8 18 28 23Z" fill="#C97F74" stroke="none"/>
+    <path d="M28 25.5v12M22 31.5h12" stroke="#FBFAF6" stroke-width="2.8"/>
+  </g>
+  <text x="84" y="32" fill="#1F2926" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700">Центр здоровой семьи</text>
+  <text x="84" y="53" fill="#315A4A" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700">комплексная забота о здоровье и красоте</text>
+</svg>

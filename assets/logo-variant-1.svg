@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 76" role="img" aria-labelledby="title desc">
+  <title id="title">Центр здоровой семьи - вариант 1</title>
+  <desc id="desc">Эмблема с сердцем, плюсом и мягкой wellness-типографикой</desc>
+  <defs>
+    <linearGradient id="g1" x1="10" y1="8" x2="64" y2="66" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8BA381"/>
+      <stop offset="1" stop-color="#315A4A"/>
+    </linearGradient>
+  </defs>
+  <rect width="260" height="76" rx="8" fill="#FBFAF6"/>
+  <g transform="translate(13 10)">
+    <circle cx="28" cy="28" r="27" fill="url(#g1)"/>
+    <path d="M28 14.6c7.2-7 17.6-2.3 17.6 6 0 9.9-10.3 15.7-17.6 21.6C20.7 36.3 10.4 30.5 10.4 20.6c0-8.3 10.4-13 17.6-6Z" fill="#FBFAF6"/>
+    <path d="M28 17.7v18.4M18.8 26.9h18.4" stroke="#315A4A" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+  <text x="82" y="34" fill="#1F2926" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700">Центр здоровой</text>
+  <text x="82" y="55" fill="#315A4A" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700">семьи</text>
+</svg>

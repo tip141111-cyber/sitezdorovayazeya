@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 76" role="img" aria-labelledby="title desc">
+  <title id="title">Центр здоровой семьи - вариант 3</title>
+  <desc id="desc">Премиальный монограммный логотип с медицинским крестом</desc>
+  <rect width="260" height="76" rx="8" fill="#F1ECE2"/>
+  <g transform="translate(16 12)">
+    <rect x="0" y="0" width="52" height="52" rx="8" fill="#315A4A"/>
+    <path d="M14 31c8-15 20-20 33-18-1 16-13 27-31 26" fill="none" stroke="#FBFAF6" stroke-width="3" stroke-linecap="round"/>
+    <path d="M26 14v23M14.5 25.5h23" stroke="#FBFAF6" stroke-width="3.2" stroke-linecap="round"/>
+    <circle cx="39" cy="39" r="7" fill="#C97F74"/>
+  </g>
+  <text x="84" y="31" fill="#1F2926" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700">Центр здоровой семьи</text>
+  <text x="84" y="52" fill="#315A4A" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700">диагностика • нутрициология • уход</text>
+</svg>
