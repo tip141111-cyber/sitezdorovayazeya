@@ -45,13 +45,13 @@ $message = "Новая заявка с сайта {$site}\n\n"
     . "Комментарий: " . ($comment !== '' ? $comment : 'Не указан') . "\n";
 
 $headers = [
-    'From: site@zdorovzeya.work.gd',
+    'From: Центр здоровой семьи <tip141111@gmail.com>',
     'Reply-To: tip141111@gmail.com',
     'Content-Type: text/plain; charset=UTF-8',
     'X-Mailer: PHP/' . phpversion(),
 ];
 
-$sent = mail($to, $subject, $message, implode("\r\n", $headers));
+$sent = mail($to, $subject, $message, implode("\r\n", $headers), '-f tip141111@gmail.com');
 
 if (!$sent) {
     http_response_code(500);
