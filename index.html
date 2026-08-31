@@ -1054,10 +1054,8 @@
                 <div><strong>Режим работы:</strong> ежедневно с 09:00 до 18:00</div>
               </div>
             </div>
-            <form class="form" id="lead-form" action="https://formsubmit.co/tip141111@gmail.com" method="POST">
-              <input type="hidden" name="_subject" value="Новая заявка с сайта Центра здоровой семьи" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display: none" />
+            <form class="form" id="lead-form" action="/send.php" method="POST">
+              <input type="text" name="website" tabindex="-1" autocomplete="off" style="display: none" aria-hidden="true" />
               <label>
                 Ваше имя
                 <input name="Имя" type="text" placeholder="Например, Анна" autocomplete="name" required />

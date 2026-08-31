@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Заявка отправлена - Центр здоровой семьи</title>
+    <style>
+      :root {
+        --milk: #fbfaf6;
+        --moss: #315a4a;
+        --ink: #1f2926;
+        --muted: #63706b;
+        --line: rgba(49, 90, 74, 0.16);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        margin: 0;
+        padding: 24px;
+        background:
+          linear-gradient(90deg, rgba(251, 250, 246, 0.98), rgba(251, 250, 246, 0.88)),
+          url("assets/photos/hero-room.jpg") center / cover;
+        color: var(--ink);
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        line-height: 1.55;
+      }
+
+      main {
+        width: min(620px, 100%);
+        padding: 36px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 22px 70px rgba(31, 41, 38, 0.12);
+      }
+
+      img {
+        width: 190px;
+        height: auto;
+        margin-bottom: 28px;
+      }
+
+      h1 {
+        margin: 0 0 14px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(34px, 7vw, 52px);
+        line-height: 1.02;
+        font-weight: 600;
+      }
+
+      p {
+        margin: 0 0 24px;
+        color: var(--muted);
+        font-size: 18px;
+      }
+
+      a {
+        min-height: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        padding: 13px 20px;
+        background: var(--moss);
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="assets/logo-variant-1.svg" alt="Центр здоровой семьи" />
+      <h1>Заявка отправлена</h1>
+      <p>Спасибо. Администратор центра свяжется с вами в ближайшее рабочее время.</p>
+      <a href="/">Вернуться на сайт</a>
+    </main>
+  </body>
+</html>
