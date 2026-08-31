@@ -433,6 +433,41 @@
         font-size: 20px;
       }
 
+      .case-card--photo {
+        padding: 10px;
+        background: #fff;
+        box-shadow: 0 16px 34px rgba(31, 41, 38, 0.08);
+      }
+
+      .case-photo {
+        position: relative;
+        overflow: hidden;
+        border-radius: calc(var(--radius) - 4px);
+        background: #f4f1ea;
+        aspect-ratio: 1 / 1;
+      }
+
+      .case-photo img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+
+      .case-photo__badge {
+        position: absolute;
+        left: 12px;
+        bottom: 12px;
+        padding: 7px 11px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.88);
+        color: var(--moss);
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+        box-shadow: 0 10px 20px rgba(31, 41, 38, 0.12);
+      }
+
       .compare {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -939,25 +974,23 @@
                 <p class="result">Результат: домашний уход работает эффективнее и поддерживает результат процедур.</p>
               </article>
               <article class="service-card">
-                <h3>Трихологический уход</h3>
-                <p>Работа с состоянием кожи головы и укреплением волос.</p>
-                <p class="result">Результат: улучшение качества волос и поддержка здоровья кожи головы.</p>
+                <h3>Подбор уходовых средств и шампуней</h3>
+                <p>Индивидуальный выбор средств для кожи головы, волос, лица и тела с учетом состояния и задач клиента.</p>
+                <p class="result">Результат: понятная домашняя система ухода, которая поддерживает кожу и волосы каждый день.</p>
               </article>
             </div>
-            <div class="case-strip" aria-label="Заглушки для кейсов направления красоты">
-              <article class="case-card">
-                <h3>Кожа лица</h3>
-                <div class="compare">
-                  <div class="compare__slot"><span>До</span>Фото до ухода или диагностики</div>
-                  <div class="compare__slot"><span>После</span>Фото после курса или процедуры</div>
-                </div>
+            <div class="case-strip" aria-label="Примеры до и после в направлении красоты">
+              <article class="case-card case-card--photo">
+                <figure class="case-photo">
+                  <img src="assets/photos/beauty-before-after-eye.jpg" alt="Пример результата до и после ухода в области глаз">
+                  <figcaption class="case-photo__badge">До / после</figcaption>
+                </figure>
               </article>
-              <article class="case-card">
-                <h3>Волосы и кожа головы</h3>
-                <div class="compare">
-                  <div class="compare__slot"><span>До</span>Фото исходного состояния</div>
-                  <div class="compare__slot"><span>После</span>Фото динамики ухода</div>
-                </div>
+              <article class="case-card case-card--photo">
+                <figure class="case-photo">
+                  <img src="assets/photos/beauty-before-after-forehead.jpg" alt="Пример результата до и после ухода за кожей лба">
+                  <figcaption class="case-photo__badge">До / после</figcaption>
+                </figure>
               </article>
             </div>
             <div class="section-actions">
@@ -1072,7 +1105,7 @@
                   <option>Нутрициология</option>
                   <option>Косметология и уход</option>
                   <option>Диагностика кожи</option>
-                  <option>Трихологический уход</option>
+                  <option>Подбор уходовых средств и шампуней</option>
                   <option>Комплексная программа</option>
                 </select>
               </label>
