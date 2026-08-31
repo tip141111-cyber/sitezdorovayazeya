@@ -147,7 +147,7 @@
         padding: 52px 0 42px;
         background:
           linear-gradient(90deg, rgba(251, 250, 246, 0.98) 0%, rgba(251, 250, 246, 0.88) 45%, rgba(251, 250, 246, 0.18) 100%),
-          url("assets/photos/beauty-room.jpg") center right / cover;
+          url("assets/photos/hero-room.jpg") center right / cover;
       }
 
       .hero__content {
@@ -413,6 +413,61 @@
         font-weight: 700;
       }
 
+      .case-strip {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 22px;
+      }
+
+      .case-card {
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: rgba(255, 255, 255, 0.78);
+      }
+
+      .case-card h3 {
+        margin-bottom: 12px;
+        color: var(--moss);
+        font-size: 20px;
+      }
+
+      .compare {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .compare__slot {
+        min-height: 220px;
+        position: relative;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        border: 1px dashed rgba(49, 90, 74, 0.28);
+        border-radius: var(--radius);
+        background:
+          linear-gradient(135deg, rgba(110, 135, 104, 0.12), rgba(201, 127, 116, 0.1)),
+          #fbfaf6;
+        color: rgba(31, 41, 38, 0.62);
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .compare__slot span {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        padding: 6px 9px;
+        border-radius: 999px;
+        background: #fff;
+        color: var(--moss);
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
       .section-actions {
         display: flex;
         flex-wrap: wrap;
@@ -601,7 +656,7 @@
           padding: 72px 0 54px;
           background:
             linear-gradient(180deg, rgba(251, 250, 246, 0.98) 0%, rgba(251, 250, 246, 0.9) 54%, rgba(251, 250, 246, 0.18) 100%),
-            url("assets/photos/beauty-room.jpg") center / cover;
+            url("assets/photos/hero-room.jpg") center / cover;
         }
 
         .hero__chips,
@@ -614,7 +669,8 @@
         .service-grid,
         .service-grid--beauty,
         .advantage-grid,
-        .mini-gallery {
+        .mini-gallery,
+        .case-strip {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
@@ -655,7 +711,8 @@
         .service-grid--beauty,
         .steps,
         .advantage-grid,
-        .mini-gallery {
+        .mini-gallery,
+        .case-strip {
           grid-template-columns: 1fr;
         }
 
@@ -765,7 +822,7 @@
             </div>
             <div class="space__grid">
               <article class="photo-card photo-card--large">
-                <img src="assets/photos/beauty-room.jpg" alt="Кабинет эстетического ухода" />
+                <img src="assets/photos/hero-room.jpg" alt="Кабинет эстетического ухода" />
                 <div class="photo-card__label">
                   <strong>Кабинет эстетического ухода</strong>
                   <span>Аппаратные процедуры, диагностика кожи и комфортная атмосфера приема.</span>
@@ -789,9 +846,9 @@
               </div>
             </div>
             <div class="mini-gallery" aria-label="Дополнительные фотографии центра">
+              <img src="assets/photos/beauty-products-front.jpg" alt="Витрина с профессиональным уходом" />
+              <img src="assets/photos/health-shelf-front.jpg" alt="Витрина направления здоровья" />
               <img src="assets/photos/home-beauty-shelves.jpg" alt="Зона Дом и Красота с уходовыми средствами" />
-              <img src="assets/photos/health-shelf.jpg" alt="Витрина направления здоровья" />
-              <img src="assets/photos/health-shelf-vertical.jpg" alt="Средства направления здоровья" />
               <img src="assets/photos/consultation-room.jpg" alt="Кабинет консультации" />
             </div>
           </div>
@@ -821,6 +878,22 @@
                 <h3>Персональная карта здоровья</h3>
                 <p>Пошаговые рекомендации по питанию, режиму, поддержке организма и образу жизни на основе диагностики и консультации.</p>
                 <p class="result">Польза: ясный план действий без случайных добавок и универсальных схем.</p>
+              </article>
+            </div>
+            <div class="case-strip" aria-label="Заглушки для кейсов направления здоровья">
+              <article class="case-card">
+                <h3>Кейс по самочувствию</h3>
+                <div class="compare">
+                  <div class="compare__slot"><span>До</span>Фото или краткое состояние до программы</div>
+                  <div class="compare__slot"><span>После</span>Фото или динамика после сопровождения</div>
+                </div>
+              </article>
+              <article class="case-card">
+                <h3>Карта здоровья</h3>
+                <div class="compare">
+                  <div class="compare__slot"><span>До</span>Первичный запрос и исходные показатели</div>
+                  <div class="compare__slot"><span>После</span>Итоги, рекомендации и изменения</div>
+                </div>
               </article>
             </div>
             <div class="section-actions">
@@ -869,6 +942,22 @@
                 <h3>Трихологический уход</h3>
                 <p>Работа с состоянием кожи головы и укреплением волос.</p>
                 <p class="result">Результат: улучшение качества волос и поддержка здоровья кожи головы.</p>
+              </article>
+            </div>
+            <div class="case-strip" aria-label="Заглушки для кейсов направления красоты">
+              <article class="case-card">
+                <h3>Кожа лица</h3>
+                <div class="compare">
+                  <div class="compare__slot"><span>До</span>Фото до ухода или диагностики</div>
+                  <div class="compare__slot"><span>После</span>Фото после курса или процедуры</div>
+                </div>
+              </article>
+              <article class="case-card">
+                <h3>Волосы и кожа головы</h3>
+                <div class="compare">
+                  <div class="compare__slot"><span>До</span>Фото исходного состояния</div>
+                  <div class="compare__slot"><span>После</span>Фото динамики ухода</div>
+                </div>
               </article>
             </div>
             <div class="section-actions">
@@ -960,24 +1049,26 @@
                 </p>
               </div>
               <div class="contact-list">
-                <div><strong>Адрес:</strong> укажите адрес центра</div>
-                <div><strong>Телефон / WhatsApp:</strong> +7 (000) 000-00-00</div>
-                <div><strong>Режим работы:</strong> ежедневно с 09:00 до 20:00</div>
-                <div><strong>Социальные сети:</strong> Instagram / Telegram</div>
+                <div><strong>Адрес:</strong> г. Зея, мкр. Светлый, 97, ТЦ «Пирамида», 1 этаж</div>
+                <div><strong>Телефон / MAX:</strong> +7 914 380-74-12</div>
+                <div><strong>Режим работы:</strong> ежедневно с 09:00 до 18:00</div>
               </div>
             </div>
-            <form class="form" id="lead-form">
+            <form class="form" id="lead-form" action="https://formsubmit.co/tip141111@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Новая заявка с сайта Центра здоровой семьи" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display: none" />
               <label>
                 Ваше имя
-                <input name="name" type="text" placeholder="Например, Анна" required />
+                <input name="Имя" type="text" placeholder="Например, Анна" autocomplete="name" required />
               </label>
               <label>
-                Телефон / WhatsApp
-                <input name="phone" type="tel" placeholder="+7 (___) ___-__-__" required />
+                Телефон / MAX
+                <input name="Телефон" type="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" required />
               </label>
               <label>
                 Интересующее направление
-                <select name="service" required>
+                <select name="Направление" required>
                   <option value="">Выберите направление</option>
                   <option>Биоквантовая диагностика</option>
                   <option>Нутрициология</option>
@@ -989,10 +1080,10 @@
               </label>
               <label>
                 Комментарий
-                <textarea name="message" placeholder="Коротко опишите ваш запрос"></textarea>
+                <textarea name="Комментарий" placeholder="Коротко опишите ваш запрос"></textarea>
               </label>
               <button class="btn btn--primary" type="submit">Записаться на прием</button>
-              <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных. Форма готова к подключению к CRM, почте или мессенджеру.</p>
+              <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных. Заявка будет отправлена администратору центра на почту.</p>
             </form>
           </div>
         </section>
@@ -1006,20 +1097,5 @@
       </footer>
     </div>
 
-    <script>
-      const form = document.querySelector("#lead-form");
-
-      form.addEventListener("submit", (event) => {
-        event.preventDefault();
-        const button = form.querySelector("button");
-        button.textContent = "Заявка отправлена";
-        button.disabled = true;
-        setTimeout(() => {
-          button.textContent = "Записаться на прием";
-          button.disabled = false;
-          form.reset();
-        }, 2400);
-      });
-    </script>
   </body>
 </html>
