@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit('Method Not Allowed');
 }
 
-if (!empty($_POST['website'] ?? '')) {
+if (!empty($_POST['company'] ?? '') || !empty($_POST['website'] ?? '')) {
     header('Location: /thank-you.html');
     exit;
 }
