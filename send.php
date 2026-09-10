@@ -37,6 +37,12 @@ $phone = $clean($phone);
 $service = $clean($service);
 $comment = $clean($comment);
 
+$phoneDigits = preg_replace('/\D+/', '', $phone) ?? '';
+if (!preg_match('/^\+7[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$/', $phone) || !preg_match('/^7\d{10}$/', $phoneDigits)) {
+    http_response_code(400);
+    exit('Введите российский номер телефона в формате +7.');
+}
+
 $to = 'tip141111@gmail.com';
 $subject = 'Новая заявка с сайта Центра здоровой семьи';
 $site = 'zdorovzeya.work.gd';
