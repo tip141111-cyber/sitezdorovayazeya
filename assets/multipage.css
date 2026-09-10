@@ -571,8 +571,9 @@ textarea {
   left: -9999px;
 }
 
-.consent-field {
+.lead-form .consent-field {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   gap: 10px;
   color: var(--muted);
@@ -580,7 +581,7 @@ textarea {
   font-weight: 500;
 }
 
-.consent-field input {
+.lead-form .consent-field input {
   flex: 0 0 18px;
   width: 18px;
   height: 18px;
@@ -588,7 +589,11 @@ textarea {
   accent-color: var(--moss);
 }
 
-.consent-field a {
+.lead-form .consent-field span {
+  display: block;
+}
+
+.lead-form .consent-field a {
   color: #c23b31;
   font-weight: 800;
   text-decoration: underline;
