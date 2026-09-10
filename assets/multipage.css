@@ -425,6 +425,28 @@ h3 {
   font-size: 18px;
 }
 
+.document-content {
+  max-width: 860px;
+}
+
+.document-content h2 {
+  margin-top: 42px;
+  font-size: 30px;
+}
+
+.document-content p,
+.document-content li {
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.document-content a {
+  color: var(--clay);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .timeline {
   display: grid;
   gap: 12px;
@@ -547,6 +569,30 @@ textarea {
 .hidden-field {
   position: absolute;
   left: -9999px;
+}
+
+.consent-field {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  align-items: start;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.consent-field input {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--moss);
+}
+
+.consent-field a {
+  color: var(--clay);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .cta-band {

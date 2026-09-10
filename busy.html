@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Заявка отправлена - Центр здоровой семьи</title>
+    <title>Сайт временно перегружен | Центр здоровой семьи</title>
+    <meta name="robots" content="noindex" />
     <style>
       :root {
         --milk: #fbfaf6;
@@ -23,9 +24,7 @@
         place-items: center;
         margin: 0;
         padding: 24px;
-        background:
-          linear-gradient(90deg, rgba(251, 250, 246, 0.98), rgba(251, 250, 246, 0.88)),
-          url("assets/photos/hero-room.jpg") center / cover;
+        background: var(--milk);
         color: var(--ink);
         font-family: Inter, "Segoe UI", Arial, sans-serif;
         line-height: 1.55;
@@ -36,7 +35,7 @@
         padding: 36px;
         border: 1px solid var(--line);
         border-radius: 8px;
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(255, 255, 255, 0.92);
         box-shadow: 0 22px 70px rgba(31, 41, 38, 0.12);
       }
 
@@ -48,22 +47,15 @@
 
       h1 {
         margin: 0 0 14px;
-        font-family: Georgia, "Times New Roman", serif;
+        color: var(--moss);
         font-size: clamp(34px, 7vw, 52px);
         line-height: 1.02;
-        font-weight: 600;
       }
 
       p {
         margin: 0 0 24px;
         color: var(--muted);
         font-size: 18px;
-      }
-
-      .actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
       }
 
       a {
@@ -78,23 +70,14 @@
         font-weight: 700;
         text-decoration: none;
       }
-
-      .text-link {
-        border: 1px solid var(--line);
-        background: rgba(255, 255, 255, 0.82);
-        color: var(--moss);
-      }
     </style>
   </head>
   <body>
     <main>
       <img src="assets/logo-variant-1.svg" alt="Центр здоровой семьи" />
-      <h1>Заявка отправлена</h1>
-      <p>Спасибо. Администратор центра свяжется с вами в ближайшее рабочее время.</p>
-      <div class="actions">
-        <a href="/">Вернуться на сайт</a>
-        <a class="text-link" href="privacy.html">Политика конфиденциальности</a>
-      </div>
+      <h1>Сайт временно перегружен</h1>
+      <p>Попробуйте обновить страницу через пару минут. Для записи можно позвонить: +7 914 380-74-12.</p>
+      <a href="tel:+79143807412">Позвонить</a>
     </main>
   </body>
 </html>

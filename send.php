@@ -11,6 +11,11 @@ if (!empty($_POST['company'] ?? '') || !empty($_POST['website'] ?? '')) {
     exit;
 }
 
+if (empty($_POST['privacy_consent'] ?? '')) {
+    http_response_code(400);
+    exit('Необходимо согласие на обработку персональных данных.');
+}
+
 $name = trim((string)($_POST['Имя'] ?? ''));
 $phone = trim((string)($_POST['Телефон'] ?? ''));
 $service = trim((string)($_POST['Направление'] ?? ''));
