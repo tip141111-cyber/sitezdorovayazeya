@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Контакты и запись | Центр здоровой семьи в Зее</title>
+    <meta name="description" content="Адрес, телефон, режим работы и форма записи в Центр здоровой семьи в Зее." />
+    <link rel="stylesheet" href="assets/multipage.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-grid">
+        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="Центр здоровой семьи" /></a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <a href="health.html">Здоровье</a>
+          <a href="beauty.html">Красота</a>
+          <a href="process.html">Как мы работаем</a>
+          <a href="specialists.html">Специалисты</a>
+          <a class="active" href="contacts.html">Контакты</a>
+        </nav>
+        <a class="btn btn-small" href="#form">Записаться</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-grid">
+          <div>
+            <h1>Оставьте заявку, и мы свяжемся с вами</h1>
+            <p class="lead">Подскажем, с какого направления лучше начать: диагностика, нутрициология, косметология или подбор ухода.</p>
+          </div>
+          <img src="assets/photos/hero-room.jpg" alt="Кабинет Центра здоровой семьи" />
+        </div>
+      </section>
+
+      <section class="section contact-section" id="form">
+        <div class="container contact-columns">
+          <div class="contact-info">
+            <h2>Центр здоровой семьи</h2>
+            <p><strong>Адрес:</strong> г. Зея, мкр. Светлый, 97, ТЦ «Пирамида», 1 этаж</p>
+            <p><strong>Телефон / MAX:</strong> <a href="tel:+79143807412">+7 914 380-74-12</a></p>
+            <p><strong>Режим работы:</strong> ежедневно с 09:00 до 18:00</p>
+          </div>
+
+          <form class="lead-form" action="/send.php" method="post">
+            <label>
+              Имя
+              <input name="Имя" type="text" placeholder="Как к вам обращаться" required />
+            </label>
+            <label>
+              Телефон
+              <input name="Телефон" type="tel" placeholder="+7 ___ ___-__-__" required />
+            </label>
+            <label>
+              Направление
+              <select name="Направление" required>
+                <option value="">Выберите направление</option>
+                <option>Биоквантовая диагностика</option>
+                <option>Нутрициология</option>
+                <option>Косметология и уход</option>
+                <option>Диагностика кожи</option>
+                <option>Подбор уходовых средств и шампуней</option>
+                <option>Комплексная программа</option>
+              </select>
+            </label>
+            <label>
+              Комментарий
+              <textarea name="Комментарий" placeholder="Коротко опишите ваш запрос"></textarea>
+            </label>
+            <label class="hidden-field">
+              Не заполнять
+              <input name="company" type="text" tabindex="-1" autocomplete="off" />
+            </label>
+            <button class="btn" type="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <span>Центр здоровой семьи</span>
+        <a href="tel:+79143807412">+7 914 380-74-12</a>
+        <span>г. Зея, мкр. Светлый, 97, ТЦ «Пирамида», 1 этаж</span>
+      </div>
+    </footer>
+  </body>
+</html>
