@@ -47,7 +47,7 @@ $to = 'alexandrdiamondzeya@yandex.com';
 $subject = 'Новая заявка с сайта Центра здоровой семьи';
 $site = 'zdorovyezeya.ru';
 $date = date('d.m.Y H:i');
-$from = 'no-reply@zdorovyezeya.ru';
+$from = $to;
 
 $message = "Новая заявка с сайта {$site}\n\n"
     . "Дата: {$date}\n"
