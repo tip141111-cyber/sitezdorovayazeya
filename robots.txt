@@ -4,6 +4,7 @@ Disallow: /busy.html
 Disallow: /thank-you.html
 Disallow: /logo-preview.html
 Disallow: /yandex_993923d550f6cacc.html
+Allow: /favicon.svg
 
 Sitemap: https://zdorovyezeya.ru/sitemap.xml
 Host: https://zdorovyezeya.ru

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Центр здоровой семьи">
+  <defs>
+    <linearGradient id="leaf" x1="24" y1="18" x2="96" y2="102" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6E8768"/>
+      <stop offset="1" stop-color="#315A4A"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="24" fill="#FBFAF6"/>
+  <circle cx="60" cy="60" r="46" fill="url(#leaf)"/>
+  <path d="M60 37c13.8-13.4 33.2-4.5 33.2 11.4 0 18.8-19.6 29.8-33.2 41.2C46.4 78.2 26.8 67.2 26.8 48.4 26.8 32.5 46.2 23.6 60 37Z" fill="#FBFAF6"/>
+  <path d="M60 43v35M42.5 60.5h35" fill="none" stroke="#315A4A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M41 90c8.8-8 29.2-8 38 0" fill="none" stroke="#FBFAF6" stroke-width="7" stroke-linecap="round"/>
+</svg>
