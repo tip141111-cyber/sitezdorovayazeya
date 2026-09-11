@@ -45,7 +45,7 @@ if (!preg_match('/^\+7[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$/',
 
 $to = 'tip141111@gmail.com';
 $subject = 'Новая заявка с сайта Центра здоровой семьи';
-$site = 'zdorovzeya.work.gd';
+$site = 'zdorovyezeya.ru';
 $date = date('d.m.Y H:i');
 
 $message = "Новая заявка с сайта {$site}\n\n"

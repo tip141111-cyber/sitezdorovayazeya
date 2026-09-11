@@ -51,7 +51,7 @@ systemctl reload nginx
 4. Получить сертификат:
 
 ```bash
-certbot --nginx -d zdorovzeya.work.gd -d www.zdorovzeya.work.gd
+certbot --nginx -d zdorovyezeya.ru -d www.zdorovyezeya.ru
 ```
 
 5. Включить firewall:
