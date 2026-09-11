@@ -21,7 +21,6 @@
 - `22/tcp` - SSH.
 - `80/tcp` - HTTP редирект на HTTPS.
 - `443/tcp` - HTTPS сайт.
-- `34314/udp` - Amnezia VPN.
 
 ## Быстрый переезд на новый VPS без Docker
 
@@ -60,7 +59,6 @@ certbot --nginx -d zdorovyezeya.ru -d www.zdorovyezeya.ru
 ufw allow 22/tcp
 ufw allow 80/tcp
 ufw allow 443/tcp
-ufw allow 34314/udp
 ufw --force enable
 ```
 
