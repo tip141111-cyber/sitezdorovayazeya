@@ -43,10 +43,11 @@ if (!preg_match('/^\+7[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$/',
     exit('Введите российский номер телефона в формате +7.');
 }
 
-$to = 'tip141111@gmail.com';
+$to = 'alexandrdiamondzeya@yandex.com';
 $subject = 'Новая заявка с сайта Центра здоровой семьи';
 $site = 'zdorovyezeya.ru';
 $date = date('d.m.Y H:i');
+$from = 'no-reply@zdorovyezeya.ru';
 
 $message = "Новая заявка с сайта {$site}\n\n"
     . "Дата: {$date}\n"
@@ -56,13 +57,13 @@ $message = "Новая заявка с сайта {$site}\n\n"
     . "Комментарий: " . ($comment !== '' ? $comment : 'Не указан') . "\n";
 
 $headers = [
-    'From: Центр здоровой семьи <tip141111@gmail.com>',
-    'Reply-To: tip141111@gmail.com',
+    "From: Центр здоровой семьи <{$from}>",
+    "Reply-To: {$to}",
     'Content-Type: text/plain; charset=UTF-8',
     'X-Mailer: PHP/' . phpversion(),
 ];
 
-$sent = mail($to, $subject, $message, implode("\r\n", $headers), '-f tip141111@gmail.com');
+$sent = mail($to, $subject, $message, implode("\r\n", $headers), "-f {$from}");
 
 if (!$sent) {
     http_response_code(500);
